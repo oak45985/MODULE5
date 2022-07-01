@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron" id="headerOne">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
@@ -32,53 +32,53 @@
     <div class="container">
       <div class="row">
         <div class="col-2"></div>
-          <div class="col-8">
+          <div class="col-8 saveAreas">
           <!-- Timeblocks go here -->
-            <ul class="row" id="nineAm">
-              <li class="col-2">9 AM</li>
-              <li class="col-8" id="nineText"></li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="tenAm">
-              <li class="col-2">10 AM</li>
-              <li class="col-8" id="tenText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="elevenAm">
-              <li class="col-2">11 AM</li>
-              <li class="col-8" id="elevenText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="twelvePm">
-              <li class="col-2">12 PM</li>
-              <li class="col-8" id="twelveText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="onePm">
-              <li class="col-2">1 PM</li>
-              <li class="col-8" id="oneText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="twoPm">
-              <li class="col-2">2 PM</li>
-              <li class="col-8" id="twoText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="threePm">
-              <li class="col-2">3 PM</li>
-              <li class="col-8"id="threeText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="fourPm">
-              <li class="col-2">4 PM</li>
-              <li class="col-8" id="fourText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
-            <ul class="row" id="fivePm">
-              <li class="col-2">5 PM</li>
-              <li class="col-8" id="fiveText">Thing to do.</li>
-              <li class="col-2">Save Button</li>
-            </ul>
+            <div class="row" id="nineAm">
+              <p class="col-2 align-middle hour">9 AM</p>
+              <textarea class="col-8" id="nineText"></textarea>
+              <button class="col-2 saveBtn" id="nineSave">Save</button>
+            </div>
+            <div class="row" id="tenAm">
+              <p class="col-2 align-middle hour">10 AM</p>
+              <textarea class="col-8" id="tenText"></textarea>
+              <button class="col-2 saveBtn" id="tenSave">Save</button>
+            </div>
+            <div class="row" id="elevenAm">
+              <p class="col-2 align-middle hour">11 AM</p>
+              <textarea class="col-8" id="elevenText"></textarea>
+              <button class="col-2 saveBtn" id="elevenSave">Save</button>
+            </div>
+            <div class="row" id="twelvePm">
+              <p class="col-2 align-middle hour">12 PM</p>
+              <textarea class="col-8" id="twelveText"></textarea>
+              <button class="col-2 saveBtn" id="twelveSave">Save</button>
+            </div>
+            <div class="row" id="onePm">
+              <p class="col-2 align-middle hour">1 PM</p>
+              <textarea class="col-8" id="oneText"></textarea>
+              <button class="col-2 saveBtn" id="oneSave">Save</button>
+            </div>
+            <div class="row" id="twoPm">
+              <p class="col-2 align-middle hour">2 PM</p>
+              <textarea class="col-8" id="twoText"></textarea>
+              <button class="col-2 saveBtn" id="twoSave">Save</button>
+            </div>
+            <div class="row" id="threePm">
+              <p class="col-2 align-middle hour">3 PM</p>
+              <textarea class="col-8"id="threeText"></textarea>
+              <button class="col-2 saveBtn" id="threeSave">Save</button>
+            </div>
+            <div class="row" id="fourPm">
+              <p class="col-2 align-middle hour">4 PM</p>
+              <textarea class="col-8" id="fourText"></textarea>
+              <button class="col-2 saveBtn" id="fourSave">Save</button>
+            </div>
+            <div class="row" id="fivePm">
+              <p class="col-2 align-middle hour">5 PM</p>
+              <textarea class="col-8" id="fiveText"></textarea>
+              <button class="col-2 saveBtn" id="fiveSave">Save</button>
+            </div>
           </div>
           <div class="col-2"></div>
       </div>
@@ -86,5 +86,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

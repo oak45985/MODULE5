@@ -1,8 +1,16 @@
-var displayDate = function() {
-   var displayAgain = $("<p>").addClass("current-day").text(moment());
-   displayAgain.append(jumbotron);
-}
+var headerContainerEl = document.querySelector("#headerOne");
+var displayDateEl = document.createElement("p");
 
-displayDate();
+console.dir(headerContainerEl);
 
-updated 
+var getDate = function() {
+
+displayDateEl.textContent = moment().format("MMM Do YY");
+displayDateEl.className = "lead";
+
+console.log(displayDateEl);
+
+headerContainerEl.appendChild(displayDateEl);
+};
+
+getDate();
