@@ -18,4 +18,6 @@ THEN the saved events persist
 
 # Screen Shot
 
-# Created by John Oakley 6.29.22
+![image of project](./assets/images/Screen%20Shot%202022-06-30%20at%2011.13.05%20PM.png)
+
+# Created by John Oakley 6.30.22
