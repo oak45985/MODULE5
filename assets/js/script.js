@@ -1,7 +1,6 @@
 var headerContainerEl = document.querySelector("#headerOne");
 var displayDateEl = document.createElement("p");
-
-console.dir(headerContainerEl);
+var hourByHourEl = document.querySelector("#hour");
 
 var getDate = function() {
 
@@ -14,3 +13,10 @@ headerContainerEl.appendChild(displayDateEl);
 };
 
 getDate();
+
+var changeHour = function() {
+   var currentTime = moment();
+
+   // if 
+}
+
